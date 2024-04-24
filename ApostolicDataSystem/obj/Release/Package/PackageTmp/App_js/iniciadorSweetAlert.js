@@ -18,6 +18,7 @@
                 allowOutsideClick: false,
                 footer: '' + footer + '',
                 showCancelButton: false,
+                toast: true,
             }).then(function (isConfirm) {
                 if (tipoAlerta == 'success') {
                     if (tipoRedirect.length > 0) {
@@ -43,7 +44,8 @@
                 confirmButtonText: 'Accept',
                 allowOutsideClick: false,
                 footer: '' + footer + '',
-                showCancelButton: false
+                showCancelButton: false,
+                toast: true
             });
         }
     }
@@ -56,7 +58,8 @@
             confirmButtonText: 'Accept',
             allowOutsideClick: false,
             showCancelButton: false,
-            footer: '' + footer + ''
+            footer: '' + footer + '',
+            toast: true
         });
     }
 }

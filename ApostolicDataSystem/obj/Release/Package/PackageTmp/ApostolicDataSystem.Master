@@ -20,9 +20,10 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
 
     <!-- Vendor CSS Files -->
+    <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/assets/css/fontGoogleApis.css")%>">
     <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/assets/vendor/bootstrap/css/bootstrap.min.css")%>">
     <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/assets/vendor/bootstrap-icons/bootstrap-icons.css")%>">
     <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/assets/vendor/boxicons/css/boxicons.min.css")%>">
@@ -30,12 +31,21 @@
     <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/assets/vendor/quill/quill.bubble.css")%>">
     <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/assets/vendor/remixicon/remixicon.css")%>">
     <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/assets/vendor/simple-datatables/style.css")%>">
-
+    <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/assets/css/select2.min.css")%>">
+    
     <!-- Template Main CSS File -->
     <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/assets/css/style.css")%>">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="/App_js/iniciadorSweetAlert.js"></script> 
+
+    <!-- Template Main JS File -->
+    <script src="<%= Page.ResolveClientUrl("~/App_js/sweetalert2.js")%>"></script>    
+    <script src="<%= Page.ResolveClientUrl("~/App_js/iniciadorSweetAlert.js")%>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/App_js/jquery-3.7.1.min.js")%>"></script>    
+    <script src="<%= Page.ResolveClientUrl("~/App_js/validaciones.js")%>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/assets/vendor/cleave/cleave.min.js")%>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/assets/vendor/cleave/addons/cleave-phone.us.js")%>"></script>
+    
+    <script src="<%= Page.ResolveClientUrl("~/App_js/mascaras.js")%>"></script>
+
 </head>
 
 <body>
@@ -112,7 +122,7 @@
         </aside>
         <!-- End Sidebar-->
 
-        <div id="divContenido" class="">
+        <div id="divContenido">
             <asp:ContentPlaceHolder ID="cphBody" runat="server">
             </asp:ContentPlaceHolder>
         </div>
@@ -139,10 +149,10 @@
         <script src="<%= Page.ResolveClientUrl("~/assets/vendor/simple-datatables/simple-datatables.js")%>"></script>
         <script src="<%= Page.ResolveClientUrl("~/assets/vendor/tinymce/tinymce.min.js")%>"></script>
         <script src="<%= Page.ResolveClientUrl("~/assets/vendor/php-email-form/validate.js")%>"></script>
-
+        <script src="<%= Page.ResolveClientUrl("~/App_js/select2.full.min.js")%>"></script>
+        <script src="<%= Page.ResolveClientUrl("~/App_js/form-select2.js")%>"></script>
         <!-- Template Main JS File -->
         <script src="<%= Page.ResolveClientUrl("~/assets/js/main.js")%>"></script>
-
     </form>
 </body>
 

@@ -5,16 +5,59 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Personal\CODE\Compilado\ApostolicDataSystem</_PublishTargetUrl>
+    <History>True|2024-04-24T04:35:21.8488859Z;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApostolicDataSystem.Master">
-      <publishTime>04/18/2024 03:28:15</publishTime>
+      <publishTime>04/23/2024 21:29:32</publishTime>
+    </File>
+    <File Include="App_js/datatables.js">
+      <publishTime>04/20/2024 20:15:54</publishTime>
+    </File>
+    <File Include="App_js/datatables.min.js">
+      <publishTime>04/20/2024 20:15:54</publishTime>
+    </File>
+    <File Include="App_js/form-select2.js">
+      <publishTime>02/13/2024 16:57:23</publishTime>
+    </File>
+    <File Include="App_js/form-select2.min.js">
+      <publishTime>02/13/2024 16:57:23</publishTime>
     </File>
     <File Include="App_js/iniciadorSweetAlert.js">
-      <publishTime>04/12/2024 01:49:22</publishTime>
+      <publishTime>04/23/2024 00:33:31</publishTime>
+    </File>
+    <File Include="App_js/jquery-3.7.1.min.js">
+      <publishTime>04/20/2024 18:21:51</publishTime>
+    </File>
+    <File Include="App_js/mascaras.js">
+      <publishTime>04/23/2024 19:44:02</publishTime>
+    </File>
+    <File Include="App_js/select2.full.min.js">
+      <publishTime>02/13/2024 17:11:18</publishTime>
+    </File>
+    <File Include="App_js/sweetalert2.js">
+      <publishTime>04/20/2024 18:08:47</publishTime>
+    </File>
+    <File Include="App_js/validaciones.js">
+      <publishTime>04/23/2024 00:24:00</publishTime>
+    </File>
+    <File Include="assets/css/datatables.css">
+      <publishTime>04/20/2024 20:15:54</publishTime>
+    </File>
+    <File Include="assets/css/datatables.min.css">
+      <publishTime>04/20/2024 20:15:54</publishTime>
+    </File>
+    <File Include="assets/css/fontGoogleApis.css">
+      <publishTime>04/20/2024 13:57:55</publishTime>
+    </File>
+    <File Include="assets/css/select2.min.css">
+      <publishTime>02/13/2024 16:57:23</publishTime>
     </File>
     <File Include="assets/css/style.css">
       <publishTime>04/18/2024 02:37:56</publishTime>
+    </File>
+    <File Include="assets/css/sweetalert2.css">
+      <publishTime>05/03/2021 21:43:09</publishTime>
     </File>
     <File Include="assets/fotosMembresia/1.jpg">
       <publishTime>04/18/2024 03:39:07</publishTime>
@@ -414,6 +457,747 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="assets/vendor/chart.js/helpers.js.map">
       <publishTime>03/12/2024 09:49:58</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ac.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ad.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ae.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.af.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ag.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ai.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.al.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.am.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ao.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ar.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.as.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.at.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.au-cn.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.au.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.aw.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ax.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.az.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ba.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bb.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bd.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.be.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bf.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bg.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bh.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bi.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bj.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bl.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bm.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bn.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bo.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bq.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.br.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bs.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bt.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bw.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.by.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.bz.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ca.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cc.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cd.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cf.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cg.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ch.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ci.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ck.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cl.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cm.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cn.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.co.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cr.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cu.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cv.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cw.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cx.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cy.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.cz.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.de.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.dj.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.dk.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.dm.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.do.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.dz.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ec.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ee.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.eg.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.eh.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.er.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.es.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.et.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.fi.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.fj.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.fk.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.fm.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.fo.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.fr.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ga.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gb.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gd.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ge.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gf.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gg.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gh.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gi.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gl.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gm.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gn.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gp.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gq.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gr.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gt.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gu.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gw.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.gy.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.hk.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.hn.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.hr.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ht.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.hu.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.i18n.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.id.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ie.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.il.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.im.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.in.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.io.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.iq.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ir.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.is.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.it.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.je.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.jm.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.jo.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.jp.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ke.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.kg.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.kh.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ki.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.km.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.kn.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.kp.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.kr.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.kw.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ky.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.kz.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.la.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.lb.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.lc.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.li.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.lk.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.lr.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ls.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.lt.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.lu.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.lv.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ly.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ma.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mc.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.md.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.me.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mf.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mg.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mh.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mk.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ml.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mn.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mo.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mp.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mq.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mr.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ms.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mt.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mu.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mv.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mw.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mx.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.my.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.mz.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.na.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.nc.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ne.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.nf.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ng.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ni.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.nl.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.no.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.np.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.nr.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.nu.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.nz.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.om.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.pa.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.pe.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.pf.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.pg.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ph.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.pk.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.pl.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.pm.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.pr.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ps.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.pt.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.pw.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.py.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.qa.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.re.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ro.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.rs.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ru.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.rw.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sa.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sb.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sc.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sd.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.se.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sg.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sh.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.si.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sj.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sk.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sl.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sm.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sn.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.so.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sr.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ss.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.st.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sv.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sx.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sy.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.sz.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ta.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.tc.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.td.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.tg.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.th.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.tj.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.tk.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.tl.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.tm.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.tn.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.to.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.tr.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.tt.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.tv.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.tw.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.tz.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ua.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ug.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.us.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.uy.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.uz.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.va.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.vc.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ve.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.vg.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.vi.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.vn.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.vu.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.wf.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ws.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.xk.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.ye.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.yt.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.za.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.zm.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/addons/cleave-phone.zw.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
+    </File>
+    <File Include="assets/vendor/cleave/cleave.min.js">
+      <publishTime>02/13/2024 16:57:24</publishTime>
     </File>
     <File Include="assets/vendor/echarts/echarts.common.js">
       <publishTime>03/12/2024 09:49:58</publishTime>
@@ -1187,16 +1971,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/12/2024 09:49:58</publishTime>
     </File>
     <File Include="bin/ApostolicDataSystem.dll">
-      <publishTime>04/19/2024 09:08:22</publishTime>
+      <publishTime>04/23/2024 22:35:10</publishTime>
     </File>
     <File Include="bin/ApostolicDataSystem.pdb">
-      <publishTime>04/19/2024 09:08:22</publishTime>
+      <publishTime>04/23/2024 22:35:10</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>04/19/2024 09:08:30</publishTime>
+      <publishTime>04/23/2024 22:35:16</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>04/19/2024 09:08:29</publishTime>
+      <publishTime>04/23/2024 22:35:16</publishTime>
     </File>
     <File Include="bin/hashHelper.dll">
       <publishTime>02/20/2024 10:09:42</publishTime>
@@ -1364,13 +2148,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/12/2024 22:57:30</publishTime>
     </File>
     <File Include="Mantenimiento/miembro/listaMiembros.aspx">
-      <publishTime>04/19/2024 08:44:28</publishTime>
+      <publishTime>04/20/2024 14:44:13</publishTime>
     </File>
     <File Include="Mantenimiento/miembro/miembro.aspx">
-      <publishTime>04/18/2024 02:38:31</publishTime>
+      <publishTime>04/23/2024 19:23:13</publishTime>
+    </File>
+    <File Include="Mantenimiento/transacciones/egresos.aspx">
+      <publishTime>04/23/2024 22:28:25</publishTime>
+    </File>
+    <File Include="Mantenimiento/transacciones/ingresos.aspx">
+      <publishTime>04/23/2024 21:54:55</publishTime>
     </File>
     <File Include="Mantenimiento/transacciones/tipoTransacciones.aspx">
-      <publishTime>04/19/2024 08:44:18</publishTime>
+      <publishTime>04/23/2024 00:52:30</publishTime>
     </File>
     <File Include="Mantenimiento/usuario/listaUsuarios.aspx">
       <publishTime>04/19/2024 08:44:36</publishTime>
@@ -1379,10 +2169,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/13/2024 04:41:16</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>04/19/2024 09:08:25</publishTime>
+      <publishTime>04/23/2024 22:35:12</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/19/2024 09:08:23</publishTime>
+      <publishTime>04/23/2024 22:35:11</publishTime>
     </File>
   </ItemGroup>
 </Project>
