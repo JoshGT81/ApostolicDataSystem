@@ -33,6 +33,15 @@ namespace ApostolicDataSystem.Mantenimiento.transacciones
         protected global::System.Web.UI.WebControls.HiddenField hdfCodigo;
 
         /// <summary>
+        /// Control hdfTipoProceso.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hdfTipoProceso;
+
+        /// <summary>
         /// Control ltlTablaIngresos.
         /// </summary>
         /// <remarks>
@@ -85,5 +94,14 @@ namespace ApostolicDataSystem.Mantenimiento.transacciones
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chkEstatus;
+
+        /// <summary>
+        /// Control btnGuardar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnGuardar;
     }
 }

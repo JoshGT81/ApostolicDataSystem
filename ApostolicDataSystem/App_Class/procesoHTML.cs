@@ -23,7 +23,7 @@ namespace ApostolicDataSystem.App_Class
 
                 foreach (DataColumn columna in dtInformacion.Columns)
                 {
-                    stHtmlHeader.Append("<th>").Append(columna.ColumnName.Replace("Encript_", String.Empty).Replace("Link", "Seleccinar")).Append("</th>");
+                    stHtmlHeader.Append("<th>").Append(columna.ColumnName.Replace("Encript_", String.Empty).Replace("Link", "")).Append("</th>");
                 }
 
                 stHtmlHeader.Append("</tr>");

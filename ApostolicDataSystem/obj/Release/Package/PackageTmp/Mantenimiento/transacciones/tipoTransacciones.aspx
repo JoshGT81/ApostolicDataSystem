@@ -31,9 +31,11 @@
                             </div>
                             <hr />
                             <!-- Table with stripped rows -->
-                            <table class="table datatable table-striped">
-                                <asp:Literal runat="server" ID="ltlTablaIngresos"></asp:Literal>
-                            </table>
+                            <div class="table-responsive">
+                                <table class="table datatable table-striped">
+                                    <asp:Literal runat="server" ID="ltlTablaIngresos"></asp:Literal>
+                                </table>
+                            </div>
                             <!-- End Table with stripped rows -->
 
                         </div>

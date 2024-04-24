@@ -1,3 +1,4 @@
+C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\obj\Debug\ApostolicDataSystem.csproj.CoreCompileInputs.cache
 C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\bin\ApostolicDataSystem.dll.config
 C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\bin\ApostolicDataSystem.dll
 C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\bin\ApostolicDataSystem.pdb
@@ -55,8 +56,7 @@ C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\bin\Microsoft.Appli
 C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\bin\hashHelper.pdb
 C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\obj\Debug\ApostolicDataSystem.csproj.AssemblyReference.cache
-C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\obj\Debug\ApostolicDataSystem.csproj.CoreCompileInputs.cache
 C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\obj\Debug\ApostolicDataSystem.csproj.CopyComplete
 C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\obj\Debug\ApostolicDataSystem.dll
 C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\obj\Debug\ApostolicDataSystem.pdb
+C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\obj\Debug\ApostolicDataSystem.csproj.AssemblyReference.cache

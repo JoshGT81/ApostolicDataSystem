@@ -57,7 +57,7 @@ namespace ApostolicDataSystem.Mantenimiento.miembro
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFechaNacimiento;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtFechaNacimiento;
 
         /// <summary>
         /// Control ddlEstadoCivil.
@@ -102,7 +102,7 @@ namespace ApostolicDataSystem.Mantenimiento.miembro
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFechaBautizo;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtFechaBautizo;
 
         /// <summary>
         /// Control ddlEspirituSanto.
@@ -120,7 +120,7 @@ namespace ApostolicDataSystem.Mantenimiento.miembro
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFechaEspirituSanto;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtFechaEspirituSanto;
 
         /// <summary>
         /// Control ddlSexo.
@@ -166,6 +166,15 @@ namespace ApostolicDataSystem.Mantenimiento.miembro
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtDireccion;
+
+        /// <summary>
+        /// Control txtEmail.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtEmail;
 
         /// <summary>
         /// Control chkEstatus.

@@ -6,6 +6,7 @@ using System.Data;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Web.UI;
 
 namespace ApostolicDataSystem.Mantenimiento.miembro
 {
@@ -57,7 +58,7 @@ namespace ApostolicDataSystem.Mantenimiento.miembro
                             DateTime fechaBautizoDate;
 
                             if (DateTime.TryParse(fechaBautizo, out fechaBautizoDate))
-                                txtFechaBautizo.Text = fechaBautizoDate.ToString("yyyy-MM-dd");                        
+                                txtFechaBautizo.Value = fechaBautizoDate.ToString("yyyy-MM-dd");                        
                         }
 
                         ddlEspirituSanto.Value = drRegistro["espirituSanto"].ToString();
@@ -69,10 +70,10 @@ namespace ApostolicDataSystem.Mantenimiento.miembro
                             DateTime fechaESDate;
 
                             if (DateTime.TryParse(fechaES, out fechaESDate))
-                                txtFechaEspirituSanto.Text = fechaESDate.ToString("yyyy-MM-dd");
+                                txtFechaEspirituSanto.Value = fechaESDate.ToString("yyyy-MM-dd");
                         }
 
-                        txtFechaNacimiento.Text = Convert.ToDateTime(drRegistro["fechaNacimiento"].ToString()).ToString("yyyy-MM-dd");
+                        txtFechaNacimiento.Value = Convert.ToDateTime(drRegistro["fechaNacimiento"].ToString()).ToString("yyyy-MM-dd");
                         ddlSexo.Value = drRegistro["sexo"].ToString();
                         ddlEstadoCivil.Value = drRegistro["estadoCivil"].ToString();
                         txtEstatura.Value = drRegistro["estatura"].ToString();
@@ -109,6 +110,8 @@ namespace ApostolicDataSystem.Mantenimiento.miembro
                                        "\">Foto Actual" +
                                         "</label>";
 
+                        txtEmail.Value = drRegistro["email"].ToString();
+
                         chkEstatus.Checked = (drRegistro["estatus"].ToString().Equals("A") ? true : false);
 
                     }
@@ -138,119 +141,227 @@ namespace ApostolicDataSystem.Mantenimiento.miembro
             sweetAlert alert = new sweetAlert();
             procesosSQL sql = new procesosSQL();
 
-            try
+            if (validaInformacion())
             {
-                int _indexParametro = 0;
-                List<parametrosEventosInfo> parametros = new List<parametrosEventosInfo>();
-
-                if (hdfProceso.Value.Equals("UPDATE"))
-                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "tipo", "U", "U"));
-                else
-                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "tipo", "I", "I"));
-
-                parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "codigoMiembro", (hdfCodigo.Value.Equals("") ? "0" : hdfCodigo.Value), (hdfCodigo.Value.Equals("") ? "0" : hdfCodigo.Value)));
-                parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "nombres", txtNombres.Value, txtNombres.Value));
-                parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "apellidos", txtApellidos.Value, txtApellidos.Value));
-                parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "bautizado", ddlBautizado.Value, ddlBautizado.Value));
-
-                string fechaBautizo = txtFechaBautizo.Text;
-
-                if (fechaBautizo.Length > 0)
+                try
                 {
-                    DateTime fechBautizoDate;
+                    int _indexParametro = 0;
+                    List<parametrosEventosInfo> parametros = new List<parametrosEventosInfo>();
 
-                    if (DateTime.TryParse(fechaBautizo, out fechBautizoDate))
-                        parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaBautizo", fechBautizoDate.ToString("dd/MM/yyyy"), fechBautizoDate.ToString("dd/MM/yyyy")));
+                    if (hdfProceso.Value.Equals("UPDATE"))
+                        parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "tipo", "U", "U"));
+                    else
+                        parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "tipo", "I", "I"));
+
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "codigoMiembro", (hdfCodigo.Value.Equals("") ? "0" : hdfCodigo.Value), (hdfCodigo.Value.Equals("") ? "0" : hdfCodigo.Value)));
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "nombres", txtNombres.Value, txtNombres.Value));
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "apellidos", txtApellidos.Value, txtApellidos.Value));
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "bautizado", ddlBautizado.Value, ddlBautizado.Value));
+
+                    string fechaBautizo = txtFechaBautizo.Value;
+
+                    if (fechaBautizo.Length > 0)
+                    {
+                        DateTime fechBautizoDate;
+
+                        if (DateTime.TryParse(fechaBautizo, out fechBautizoDate))
+                            parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaBautizo", fechBautizoDate.ToString("dd/MM/yyyy"), fechBautizoDate.ToString("dd/MM/yyyy")));
+                        else
+                            parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaBautizo", string.Empty, string.Empty));
+                    }
                     else
                         parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaBautizo", string.Empty, string.Empty));
-                }
-                else
-                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaBautizo", string.Empty, string.Empty));
 
 
-                parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "espirituSanto", ddlEspirituSanto.Value, ddlEspirituSanto.Value));
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "espirituSanto", ddlEspirituSanto.Value, ddlEspirituSanto.Value));
 
-                string fechaES = txtFechaEspirituSanto.Text;
+                    string fechaES = txtFechaEspirituSanto.Value;
 
-                if (fechaES.Length > 0)
-                {
-                    DateTime fechaESDate;
+                    if (fechaES.Length > 0)
+                    {
+                        DateTime fechaESDate;
 
-                    if (DateTime.TryParse(fechaES, out fechaESDate))
-                        parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaEspirituSanto", fechaESDate.ToString("dd/MM/yyyy"), fechaESDate.ToString("dd/MM/yyyy")));
+                        if (DateTime.TryParse(fechaES, out fechaESDate))
+                            parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaEspirituSanto", fechaESDate.ToString("dd/MM/yyyy"), fechaESDate.ToString("dd/MM/yyyy")));
+                        else
+                            parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaEspirituSanto", string.Empty, string.Empty));
+                    }
                     else
                         parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaEspirituSanto", string.Empty, string.Empty));
-                }
-                else
-                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaEspirituSanto", string.Empty, string.Empty));
 
 
-                string fechaNac = txtFechaNacimiento.Text;
+                    string fechaNac = txtFechaNacimiento.Value;
 
-                if (fechaNac.Length > 0)
-                {
-                    DateTime fechaNacDate;
+                    if (fechaNac.Length > 0)
+                    {
+                        DateTime fechaNacDate;
 
-                    if (DateTime.TryParse(fechaNac, out fechaNacDate))
-                        parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaNacimiento", fechaNacDate.ToString("dd/MM/yyyy"), fechaNacDate.ToString("dd/MM/yyyy")));
+                        if (DateTime.TryParse(fechaNac, out fechaNacDate))
+                            parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaNacimiento", fechaNacDate.ToString("dd/MM/yyyy"), fechaNacDate.ToString("dd/MM/yyyy")));
+                        else
+                            parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaNacimiento", string.Empty, string.Empty));
+                    }
+
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "sexo", ddlSexo.Value, ddlSexo.Value));
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "estadoCivil", ddlEstadoCivil.Value, ddlEstadoCivil.Value));
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "estatura", txtEstatura.Value, txtEstatura.Value));
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "tallaCamisa", ddlTallaCamisa.Value, ddlTallaCamisa.Value));
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "direccion", txtDireccion.Value, txtDireccion.Value));
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "telefono", txtTelefono.Value, txtTelefono.Value));
+
+                    string fileExtension = string.Empty;
+
+                    if (fuFoto.HasFile)
+                    {
+                        string fileName = fuFoto.FileName;
+                        fileExtension = System.IO.Path.GetExtension(fileName);
+                    }
+
+
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "foto", fileExtension, fileExtension));
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "email", txtEmail.Value, txtEmail.Value));
+
+                    parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "estatus", (chkEstatus.Checked ? "A" : "I"), (chkEstatus.Checked ? "A" : "I")));
+                    
+                    DataSet dsResultado = sql.guardaMiembro(parametros);
+                    DataRow drResultado = dsResultado.Tables[0].Rows[0];
+
+                    if (drResultado["codigo"].ToString().Equals("0"))
+                    {
+                        guardarFoto(Convert.ToInt32(drResultado["codigoRegistro"].ToString()));
+
+                        _sweetAlertaInfo.TipoResultado = "success";
+                        _sweetAlertaInfo.TituloResultado = "Registro Guardado";
+                        _sweetAlertaInfo.CuerpoResultado = drResultado["mensaje"].ToString();
+                        _sweetAlertaInfo.UrlRedirect = ("../../Mantenimiento/miembro/listaMiembros.aspx");
+
+                        alert.showSweetAlert(_sweetAlertaInfo);
+                    }
                     else
-                        parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaNacimiento", string.Empty, string.Empty));
+                    {
+                        _sweetAlertaInfo.TipoResultado = "error";
+                        _sweetAlertaInfo.TituloResultado = "Error";
+                        _sweetAlertaInfo.CuerpoResultado = drResultado["mensaje"].ToString();
+
+                        alert.showSweetAlert(_sweetAlertaInfo);
+                    }
                 }
-
-                parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "sexo", ddlSexo.Value, ddlSexo.Value));
-                parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "estadoCivil", ddlEstadoCivil.Value, ddlEstadoCivil.Value));
-                parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "estatura", txtEstatura.Value, txtEstatura.Value));
-                parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "tallaCamisa", ddlTallaCamisa.Value, ddlTallaCamisa.Value));
-                parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "direccion", txtDireccion.Value, txtDireccion.Value));
-                parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "telefono", txtTelefono.Value, txtTelefono.Value));
-
-                string fileExtension = string.Empty;
-
-                if (fuFoto.HasFile)
-                {
-                    string fileName = fuFoto.FileName;
-                    fileExtension = System.IO.Path.GetExtension(fileName);                    
-                }
-
-
-                parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "foto", fileExtension, fileExtension));
-
-                parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "estatus", (chkEstatus.Checked ? "A" : "I"), (chkEstatus.Checked ? "A" : "I")));
-
-                
-
-                DataSet dsResultado = sql.guardaMiembro(parametros);
-
-                DataRow drResultado = dsResultado.Tables[0].Rows[0];
-
-                if (drResultado["codigo"].ToString().Equals("0"))
-                {
-                    guardarFoto( Convert.ToInt32(drResultado["codigoRegistro"].ToString()));
-
-                    _sweetAlertaInfo.TipoResultado = "success";
-                    _sweetAlertaInfo.TituloResultado = "Registro Guardado";
-                    _sweetAlertaInfo.CuerpoResultado = drResultado["mensaje"].ToString();
-                    _sweetAlertaInfo.UrlRedirect = ("../../Mantenimiento/miembro/listaMiembros.aspx");
-
-                    alert.showSweetAlert(_sweetAlertaInfo);
-                }
-                else
+                catch (Exception ex)
                 {
                     _sweetAlertaInfo.TipoResultado = "error";
                     _sweetAlertaInfo.TituloResultado = "Error";
-                    _sweetAlertaInfo.CuerpoResultado = drResultado["mensaje"].ToString();
-
+                    _sweetAlertaInfo.CuerpoResultado = "Ocurrió un error a intentar guardar la información.";
+                    _sweetAlertaInfo.PieResultado = ex.Message + " ------------> " + ex.StackTrace;
                     alert.showSweetAlert(_sweetAlertaInfo);
                 }
             }
-            catch (Exception ex)
-            {
-                _sweetAlertaInfo.TipoResultado = "error";
-                _sweetAlertaInfo.TituloResultado = "Error";
-                _sweetAlertaInfo.CuerpoResultado = "Ocurrió un error a intentar guardar la información.    ----->     " + ex.Message;
+        }
 
-                alert.showSweetAlert(_sweetAlertaInfo);
+        private bool validaInformacion()
+        {
+            bool esValido = true;
+
+            if (txtNombres.Value.Length <= 0)
+            {
+                validaControl(txtNombres, "validaTexto");
+                esValido = false;
             }
+            
+            if (txtFechaNacimiento.Value.Length <= 0)
+            {
+                validaControl(txtFechaNacimiento, "validaFecha");
+                esValido = false;
+            }
+
+            if (txtApellidos.Value.Length <= 0)
+            {
+                validaControl(txtApellidos, "validaTexto");
+                esValido = false;
+            }
+
+            if (txtFechaNacimiento.Value.Length <= 0)
+            {
+                validaControl(txtFechaNacimiento, "validaFecha");
+                esValido = false;
+            }
+
+            if(ddlEstadoCivil.Value.Contains("Elegir"))
+            {
+                validaControl(ddlEstadoCivil, "validaSeleccion");
+                esValido = false;
+            }
+
+            if (txtEstatura.Value.Length <= 0)
+            {
+                validaControl(txtEstatura, "controlInvalido");
+                esValido = false;
+            }
+
+            if (ddlTallaCamisa.Value.Contains("Elegir"))
+            {
+                validaControl(ddlTallaCamisa, "validaSeleccion");
+                esValido = false;
+            }
+
+            if (ddlBautizado.Value.Contains("Elegir"))
+            {
+                validaControl(ddlBautizado, "validaSeleccion");
+                esValido = false;
+            }
+            else
+            {
+                if (txtFechaBautizo.Value.Length <= 0 && ddlBautizado.Value.Equals("S"))
+                {
+                    validaControl(txtFechaBautizo, "validaFecha");
+                    esValido = false;
+                }
+            }
+
+            if (ddlEspirituSanto.Value.Contains("Elegir"))
+            {
+                validaControl(ddlEspirituSanto, "validaSeleccion");
+                esValido = false;
+            }
+            else
+            {
+                if (txtFechaEspirituSanto.Value.Length <= 0 && ddlEspirituSanto.Value.Equals("S"))
+                {
+                    validaControl(txtFechaEspirituSanto, "validaFecha");
+                    esValido = false;
+                }
+            }
+
+            if (ddlSexo.Value.Contains("Elegir"))
+            {
+                validaControl(ddlSexo, "validaSeleccion");
+                esValido = false;
+            }
+
+            if (txtTelefono.Value.Length != 17)
+            {
+                validaControl(txtTelefono, "controlInvalido");
+                esValido = false;
+            }
+
+            if (txtDireccion.Value.Length <= 0)
+            {
+                validaControl(txtDireccion, "validaDireccion");
+                esValido = false;
+            }
+
+            if (txtEmail.Value.Length <= 0)
+            {
+                validaControl(txtEmail, "validaEmail");
+                esValido = false;
+            }
+
+            return esValido;
+        }
+
+        private void validaControl(Control objeto, string funcion)
+        {
+            string javaScript = $"{funcion}({objeto.ClientID});";
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", javaScript, true);                        
         }
 
         private bool guardarFoto(int codigoMiembro)

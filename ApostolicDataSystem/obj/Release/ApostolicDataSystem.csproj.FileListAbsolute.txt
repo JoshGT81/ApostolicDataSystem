@@ -59,3 +59,4 @@ C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\obj\Release\Apostol
 C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\obj\Release\ApostolicDataSystem.csproj.CopyComplete
 C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\obj\Release\ApostolicDataSystem.dll
 C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\obj\Release\ApostolicDataSystem.pdb
+C:\Personal\sistemas\ApostolicDataSystem\ApostolicDataSystem\obj\Release\ApostolicDataSystem.csproj.AssemblyReference.cache
