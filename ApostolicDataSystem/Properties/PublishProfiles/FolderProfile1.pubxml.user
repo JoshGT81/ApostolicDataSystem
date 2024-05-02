@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Personal\CODE\Compilado\ApostolicDataSystem</_PublishTargetUrl>
-    <History>True|2024-04-24T04:35:21.8488859Z;</History>
+    <History>True|2024-04-24T04:39:04.7660520Z;True|2024-04-23T22:35:21.8488859-06:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApostolicDataSystem.Master">
@@ -1971,22 +1971,22 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/12/2024 09:49:58</publishTime>
     </File>
     <File Include="bin/ApostolicDataSystem.dll">
-      <publishTime>04/23/2024 22:35:10</publishTime>
+      <publishTime>04/30/2024 00:14:50</publishTime>
     </File>
     <File Include="bin/ApostolicDataSystem.pdb">
-      <publishTime>04/23/2024 22:35:10</publishTime>
+      <publishTime>04/30/2024 00:14:50</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>04/23/2024 22:35:16</publishTime>
+      <publishTime>04/30/2024 00:14:55</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>04/23/2024 22:35:16</publishTime>
+      <publishTime>04/30/2024 00:14:55</publishTime>
     </File>
     <File Include="bin/hashHelper.dll">
-      <publishTime>02/20/2024 10:09:42</publishTime>
+      <publishTime>04/25/2024 10:19:50</publishTime>
     </File>
     <File Include="bin/hashHelper.pdb">
-      <publishTime>02/20/2024 10:09:42</publishTime>
+      <publishTime>04/25/2024 10:19:50</publishTime>
     </File>
     <File Include="bin/Microsoft.ApplicationBlocks.Data.dll">
       <publishTime>09/26/2014 11:26:46</publishTime>
@@ -2145,7 +2145,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/13/2024 04:38:36</publishTime>
     </File>
     <File Include="Login.aspx">
-      <publishTime>04/12/2024 22:57:30</publishTime>
+      <publishTime>04/23/2024 22:35:58</publishTime>
     </File>
     <File Include="Mantenimiento/miembro/listaMiembros.aspx">
       <publishTime>04/20/2024 14:44:13</publishTime>
@@ -2154,10 +2154,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/23/2024 19:23:13</publishTime>
     </File>
     <File Include="Mantenimiento/transacciones/egresos.aspx">
-      <publishTime>04/23/2024 22:28:25</publishTime>
+      <publishTime>04/29/2024 23:10:32</publishTime>
     </File>
     <File Include="Mantenimiento/transacciones/ingresos.aspx">
-      <publishTime>04/23/2024 21:54:55</publishTime>
+      <publishTime>04/29/2024 23:19:04</publishTime>
     </File>
     <File Include="Mantenimiento/transacciones/tipoTransacciones.aspx">
       <publishTime>04/23/2024 00:52:30</publishTime>
@@ -2169,7 +2169,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/13/2024 04:41:16</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>04/23/2024 22:35:12</publishTime>
+      <publishTime>04/30/2024 00:14:51</publishTime>
     </File>
     <File Include="Web.config">
       <publishTime>04/23/2024 22:35:11</publishTime>

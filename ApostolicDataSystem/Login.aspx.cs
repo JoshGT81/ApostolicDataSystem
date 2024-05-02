@@ -2,6 +2,7 @@
 using ApostolicDataSystem.Models;
 using System;
 using System.Data;
+using System.Net;
 
 namespace ApostolicDataSystem
 {
@@ -10,7 +11,22 @@ namespace ApostolicDataSystem
         sweetAlertInfo _sweetAlertaInfo = new sweetAlertInfo();
 
         protected void Page_Load(object sender, EventArgs e)
-        {}
+        {
+            // Obtén el nombre del host
+            string hostName = Dns.GetHostName();
+
+            // Usa el nombre del host para obtener las direcciones IP del host
+            IPAddress[] hostIPs = Dns.GetHostAddresses(hostName);
+
+            // Elige una de las direcciones IP, por ejemplo, la primera
+            string hostIP = hostIPs[3].ToString();
+
+            if (hostIP.Equals("192.168.1.9"))
+            {
+                txtUsuario.Value = "elias.villatoro";
+                txtContraseña.Value = "123";
+            }
+        }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {

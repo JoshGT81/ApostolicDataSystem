@@ -133,7 +133,7 @@ namespace ApostolicDataSystem.Mantenimiento.transacciones
                     DateTime fechaDate;
 
                     if (DateTime.TryParse(fecha, out fechaDate))
-                        parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fecha", fechaDate.ToString("dd/MM/yyyy"), fechaDate.ToString("dd/MM/yyyy")));
+                        parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fecha", fechaDate.ToString("yyyy-MM-dd"), fechaDate.ToString("yyyy-MM-dd")));
                     else
                         parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fecha", string.Empty, string.Empty));
                     

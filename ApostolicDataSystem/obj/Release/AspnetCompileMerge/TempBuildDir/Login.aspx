@@ -70,7 +70,7 @@
                                             <label for="txtUsuario" class="form-label">Usuario</label>
                                             <div class="input-group has-validation">
                                                 <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                                <input type="text" name="txtUsuario" class="form-control" id="txtUsuario" runat="server" value="elias.villatoro" required>
+                                                <input type="text" name="txtUsuario" class="form-control" id="txtUsuario" runat="server" value="" required>
                                                 <div class="invalid-feedback">Por favor ingresa tu usuario.</div>
                                             </div>
                                         </div>

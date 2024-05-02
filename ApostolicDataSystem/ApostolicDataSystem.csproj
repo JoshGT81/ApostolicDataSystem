@@ -827,6 +827,7 @@
     <Content Include="assets\vendor\tinymce\composer.json" />
     <Content Include="assets\vendor\tinymce\package.json" />
     <Content Include="assets\vendor\tinymce\README.md" />
+    <Content Include="App_Class\esp-MX.json" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />

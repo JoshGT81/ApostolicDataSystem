@@ -21,7 +21,7 @@
 
         <div class="d-flex justify-content-center align-items-center">
             <section class="section profile">
-                <div class="card" style="width: 50rem;">
+                <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Egresos del día</h5>
 

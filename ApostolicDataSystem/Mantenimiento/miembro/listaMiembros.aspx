@@ -27,8 +27,8 @@
                             </div>
                             <hr />
                             <!-- Table with stripped rows -->
-                            <div class="table-responsive">
-                                <table class="table datatable table-striped">
+                            <div class="container">
+                                <table id="tblListado" class="table datatable table-responsive table-striped" style="width:100%">
                                     <asp:Literal runat="server" ID="ltlTablaDinamica"></asp:Literal>
                                 </table>
                             </div>
@@ -41,5 +41,6 @@
             </div>
 
         </section>
+
     </main>
 </asp:Content>

@@ -165,7 +165,7 @@ namespace ApostolicDataSystem.Mantenimiento.miembro
                         DateTime fechBautizoDate;
 
                         if (DateTime.TryParse(fechaBautizo, out fechBautizoDate))
-                            parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaBautizo", fechBautizoDate.ToString("dd/MM/yyyy"), fechBautizoDate.ToString("dd/MM/yyyy")));
+                            parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaBautizo", fechBautizoDate.ToString("yyyy-MM-dd"), fechBautizoDate.ToString("yyyy-MM-dd")));
                         else
                             parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaBautizo", string.Empty, string.Empty));
                     }
@@ -182,7 +182,7 @@ namespace ApostolicDataSystem.Mantenimiento.miembro
                         DateTime fechaESDate;
 
                         if (DateTime.TryParse(fechaES, out fechaESDate))
-                            parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaEspirituSanto", fechaESDate.ToString("dd/MM/yyyy"), fechaESDate.ToString("dd/MM/yyyy")));
+                            parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaEspirituSanto", fechaESDate.ToString("yyyy-MM-dd"), fechaESDate.ToString("yyyy-MM-dd")));
                         else
                             parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaEspirituSanto", string.Empty, string.Empty));
                     }
@@ -197,7 +197,7 @@ namespace ApostolicDataSystem.Mantenimiento.miembro
                         DateTime fechaNacDate;
 
                         if (DateTime.TryParse(fechaNac, out fechaNacDate))
-                            parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaNacimiento", fechaNacDate.ToString("dd/MM/yyyy"), fechaNacDate.ToString("dd/MM/yyyy")));
+                            parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaNacimiento", fechaNacDate.ToString("yyyy-MM-dd"), fechaNacDate.ToString("yyyy-MM-dd")));
                         else
                             parametros.Add(new parametrosEventosInfo(_indexParametro++, _indexParametro, "fechaNacimiento", string.Empty, string.Empty));
                     }
@@ -251,7 +251,7 @@ namespace ApostolicDataSystem.Mantenimiento.miembro
                     _sweetAlertaInfo.TipoResultado = "error";
                     _sweetAlertaInfo.TituloResultado = "Error";
                     _sweetAlertaInfo.CuerpoResultado = "Ocurrió un error a intentar guardar la información.";
-                    _sweetAlertaInfo.PieResultado = ex.Message + " ------------> " + ex.StackTrace;
+                    _sweetAlertaInfo.PieResultado = ex.Message;
                     alert.showSweetAlert(_sweetAlertaInfo);
                 }
             }

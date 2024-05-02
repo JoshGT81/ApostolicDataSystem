@@ -33,7 +33,7 @@
                             <hr />
                             <!-- Table with stripped rows -->
                             <div class="table-responsive">
-                                <table class="table datatable table-striped">
+                                <table id="tblListadoIngresos" class="table datatable table-responsive table-striped" style="width:100%">
                                     <asp:Literal runat="server" ID="ltlTablaIngresos"></asp:Literal>
                                 </table>
                             </div>
@@ -54,7 +54,7 @@
                             <hr />
                             <!-- Table with stripped rows -->
                             <div class="table-responsive">
-                                <table class="table datatable table-striped">
+                                <table id="tblListadoEgresos" class="table datatable table-responsive table-striped" style="width:100%">
                                     <asp:Literal runat="server" ID="ltlTablaEgresos"></asp:Literal>
                                 </table>
                             </div>
@@ -106,5 +106,33 @@
                 </div>
             </div>
         </div>
+
+        <script type="text/javascript">
+            let tableI = new DataTable('#tblListadoIngresos', {
+                language: {
+                    url: '<%= Page.ResolveClientUrl("~/App_Class/esp-MX.json")%>',
+                decimal: '.',
+                thousands: ','
+            },
+            lengthMenu: [
+                [5, 10, 25, 50, -1],
+                [5, 10, 25, 50, 'All']
+            ],
+            responsive: true
+            });
+        
+            let tableE = new DataTable('#tblListadoEgresos', {
+                language: {
+                    url: '<%= Page.ResolveClientUrl("~/App_Class/esp-MX.json")%>',
+                    decimal: '.',
+                    thousands: ','
+                },
+                lengthMenu: [
+                    [5, 10, 25, 50, -1],
+                    [5, 10, 25, 50, 'All']
+                ],
+                responsive: true
+            });
+        </script>
     </main>
 </asp:Content>
